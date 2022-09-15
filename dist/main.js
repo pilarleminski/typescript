@@ -1,14 +1,18 @@
-var nameUser = 'Pilar Veiga'; //identificador
-var idade = 38;
-var statusUser = 1;
+"use strict";
+const nameUser = 'Pilar Veiga'; //identificador
+const idade = 38;
+const statusUser = 1;
 if (statusUser == 1) {
-    console.log("Estudante");
+    console.log("Usuário");
 }
 else if (statusUser == 2) {
     console.log("Empresa");
 }
 else if (statusUser == 3) {
     console.log("Administrador");
+}
+else {
+    console.log("Inválido");
 }
 if (idade <= 2) {
     console.log("Bebê");
@@ -25,4 +29,4 @@ else if (idade <= 59) {
 else {
     console.log("Idoso");
 }
-console.log("Seja bem vindo ao curso de TypeScript ".concat(nameUser));
+console.log(`Seja bem vindo ao curso de TypeScript ${nameUser}`);
