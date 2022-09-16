@@ -60,14 +60,16 @@ for(let x = yearFactory; x >= 1920; x = x - 10){
     }
     console.log(x);
 }
-*/
-console.log("TABUADA");
-for (let x = 0; x <= 10; x++) {
-    if (x > 2 && x < 10) {
-        if (x % 2 == 1 && x > 3) {
-            console.log(".");
+
+console.log("TABUADA")
+for(let x = 0; x <= 10; x++){
+    if(x > 2 && x < 10){
+        if(x % 2 == 1 && x > 3){
+            console.log(".")
         }
         continue;
     }
-    console.log("2 x " + x + " = " + 2 * x);
+    console.log("2 x "+x+" = "+2*x);
 }
+*/
+console.log(10 === "10", '&', 10 == "10");

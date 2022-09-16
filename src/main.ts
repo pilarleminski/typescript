@@ -59,7 +59,7 @@ for(let x = yearFactory; x >= 1920; x = x - 10){
     }
     console.log(x);
 }
-*/
+
 console.log("TABUADA")
 for(let x = 0; x <= 10; x++){
     if(x > 2 && x < 10){
@@ -70,3 +70,5 @@ for(let x = 0; x <= 10; x++){
     }
     console.log("2 x "+x+" = "+2*x);
 }
+*/
+console.log(10 === "10", '&', 10 == "10");
