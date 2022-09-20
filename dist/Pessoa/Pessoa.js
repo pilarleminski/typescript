@@ -8,7 +8,6 @@ class Pessoa {
     constructor(parametroNome, parametroIdade) {
         this.nome = parametroNome;
         this.idade = parametroIdade;
-        console.log(`A pessoa ${this.nome} de idade ${this.idade} está andando`);
     }
 }
 exports.default = Pessoa;

@@ -1,14 +1,19 @@
-class Funcionario{
-    nome:string = 'Usuario';
-    ri:string = '132345';
-    cpf:string = '123.456.789-00';
+import Pessoa from "../Pessoa";
 
-    cadFuncionario(parametroNome: string, parametroRi: string, parametroCpf: string){
-        this.nome = parametroNome;
+class Funcionario extends Pessoa{
+    ri:string;
+    cpf:string;
+
+    constructor(parametroNome: string, parametroIdade: number, parametroRi: string, parametroCpf: string){
+        super(parametroNome, parametroIdade);
         this.ri = parametroRi;
         this.cpf = parametroCpf;
+        this.cadFuncionario();
+    }
+    cadFuncionario(){
         console.log(`Funcionário ${this.nome} cadastrado com sucesso!`);
     }
 }
 
 export default Funcionario
+const hcoder = new Funcionario("Paula", 23, "1342545", "123.123.123-00");
